@@ -18,7 +18,7 @@ const App = () => {
           Select a textual element in the Designer and press the button below to
           give it some placeholder content.
         </div>
-        <button>Do something</button>
+        <button>Change text</button>
       </form>
     </div>
   )

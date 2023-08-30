@@ -1,10 +1,39 @@
-# example-webflow-app-react
+# Webflow Designer Extension template with React + Vite
 
-This is an example Webflow Designer extension written in TypeScript to get you started. Check out Webflow's [documentation](https://docs.developers.webflow.com/v2.0.0/docs/create-a-designer-extensions) for in-depth information about Designer Extension features and API.
+This template is based on the default template created by the `webflow-cli`, but extended and modified to host and bundle a React application using Vite.
+
+See Webflow's [documentation](https://docs.developers.webflow.com/docs/how-do-apps-work-with-the-designer) for more information about Designer Extension APIs.
+
+## Using this template
+
+To create a project from this template, select “Use this template“ → “Create new repository“ on the [GitHub page of this template](https://github.com/stefanwittwer/webflow-app-template-react).
+
+See “Developing“ below to see which scripts to use to get started.
+
+## Directory Structure
+
+Here is an overview over the most important directories and files:
+
+`├──src/` — React application code<br>
+`├──public/` — Output folder for bundled React app (see note below)<br>
+`├──index.html` — The index file which will be used as an entry point by the bundler<br>
+`├──tsconfig.json` — A modified tsconfig which combines JSX support, Webflow types, and sensible React defaults.<br>
+`├──vite.config.ts` — Configuration for the bundler<br>
+`├──webflow.json` — Webflow App manifest<br>
+
+This template includes a suggested Prettier configuration in `.prettierrc` and uses Yarn by default.
 
 ## Developing
 
-Run `$ yarn` to install dependencies in this project.
+### Installation
+
+```
+yarn
+```
+
+Run this to install dependencies in this project.
+
+### Running a development server
 
 ```
 $ yarn dev
@@ -24,3 +53,13 @@ $ yarn build
 ```
 
 This will take the contents of the `./public` folder and prepare a `bundle.zip` file ready for you to upload as a Designer extension for your App.
+
+## Note about bundling output
+
+Vite is configured to use the `public/` folder as the output, as this is where the `webflow-cli` expects the final assets for deployment, including scripts and the index.html file.
+
+If you put any assets manually in the `public/` folder, they will be overriden during buliding.
+
+## License
+
+The source code of the `webflow-app-template-react` template is available for use under the MIT license. [See license](https://github.com/stefanwittwer/webflow-app-template-react/blob/main/LICENSE.md)
