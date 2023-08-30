@@ -27,16 +27,16 @@ This template includes a suggested Prettier configuration in `.prettierrc` and u
 
 ### Installation
 
+Run this command in your terminal in the project root directory to install its dependencies:
+
 ```
 yarn
 ```
 
-Run this to install dependencies in this project.
-
 ### Running a development server
 
 ```
-$ yarn dev
+yarn dev
 ```
 
 The above command does a few things:
@@ -49,7 +49,7 @@ The command outputs the URL under which your extension is being served. Use this
 ## Deploying
 
 ```
-$ yarn build
+yarn build
 ```
 
 This will take the contents of the `./public` folder and prepare a `bundle.zip` file ready for you to upload as a Designer extension for your App.
